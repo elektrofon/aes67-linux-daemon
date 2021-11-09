@@ -80,7 +80,7 @@ std::string get_node_id(uint32_t ip_addr) {
   std::stringstream ss;
   ip_addr = htonl(ip_addr);
   /* we create an host ID based on the current IP */
-  ss << "AES67 daemon "
+  ss << "Synth "
      << boost::format("%08x") % ((ip_addr << 16) | (ip_addr >> 16));
   return ss.str();
 }
